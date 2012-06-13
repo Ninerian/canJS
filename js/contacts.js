@@ -112,7 +112,7 @@
 
   Filter = can.Control({
     init: function(){
-      var category = can.route.attr('category') || "all";
+      var category = can.route.attr('views/category') || "all";
       this.element.html(can.view('views/filterView.ejs', {
         contacts: this.options.contacts,
         categories: this.options.categories
