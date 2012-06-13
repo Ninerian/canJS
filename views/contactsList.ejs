@@ -2,7 +2,7 @@
   <% list(contacts.filter(can.route.attr('category')), function(contact){ %>
     <li class="contact span8" <%= (el)-> el.data('contact', contact) %>>
       <div class="">
-        <%== can.view.render('contactView', {contact: contact, categories: categories}) %>
+        <%== can.view.render('views/contactView', {contact: contact, categories: categories}) %>
       </div>
     </li>
   <% }) %>
